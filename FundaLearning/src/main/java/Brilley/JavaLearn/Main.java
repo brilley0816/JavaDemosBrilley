@@ -1,5 +1,6 @@
 package Brilley.JavaLearn;
 import Brilley.Chapter01.CopyPerson;
+import Brilley.Chapter01.ExtendsInitBlock;
 import Brilley.Chapter01.Test;
 
 public class Main {
@@ -28,6 +29,8 @@ public class Main {
         cp.printInfo();
         CopyPerson cp2=(CopyPerson) cp.clone();
         cp.printInfo();
+
+        ExtendsInitBlock eib=new ExtendsInitBlock();
 
 
     }

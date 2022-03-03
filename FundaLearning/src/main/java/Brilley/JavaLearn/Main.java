@@ -1,7 +1,8 @@
 package Brilley.JavaLearn;
-import Brilley.Chapter01.CopyPerson;
-import Brilley.Chapter01.ExtendsInitBlock;
-import Brilley.Chapter01.Test;
+import Brilley.Chapter01.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws CloneNotSupportedException {
@@ -31,6 +32,39 @@ public class Main {
         cp.printInfo();
 
         ExtendsInitBlock eib=new ExtendsInitBlock();
+
+        //03-02
+        AppleIpad aIpad=new AppleIpad();
+        System.out.println(aIpad.getElectricityUse());
+        aIpad.printDescription();
+        //AppleIpad does not has the static method from interface Electronic
+        //System.out.println("aIpad is energy Efficient? "+AppleIpad.);
+        //Electronic aIpadn=aIpad;
+        System.out.println("aIpad is energy Efficient? "+Electronic.isEnergyEfficient("LED"));
+
+        //multi extends
+        Pig pg=new Pig();
+        pg.fly();
+        pg.run();
+
+        //multi format
+        List<Shape> shapeList=new ArrayList<>();
+        Circle cir=new Circle();
+        Square sqa=new Square();
+        shapeList.add(cir);
+        shapeList.add(sqa);
+        for(Shape sha:shapeList)
+        {
+            sha.printShape();
+        }
+
+        StaticMethodStudent stu1=new StaticMethodStudent("brilley",25);
+        StaticMethodStudent stu2=new StaticMethodStudent("yanyan",24);
+        stu1.printInfo();
+        stu2.printInfo();
+        StaticMethodStudent.change();
+        stu1.printInfo();
+        stu2.printInfo();
 
 
     }

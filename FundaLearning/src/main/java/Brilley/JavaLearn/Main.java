@@ -1,13 +1,18 @@
 package Brilley.JavaLearn;
 import Brilley.Chapter01.*;
+import Brilley.Chapter02.ImmutableString;
 import javafx.scene.shape.Circle;
 
+import java.lang.reflect.Array;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.Proxy;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 public class Main {
-    public static void main(String[] args) throws CloneNotSupportedException, IllegalAccessException {
+    public static void main(String[] args) throws CloneNotSupportedException, IllegalAccessException, ClassNotFoundException {
         //Initialize : files created at the beginning
         /*
         System.out.println("hello world! This is Brilley Java learning demos ensembles!");
@@ -141,5 +146,40 @@ public class Main {
         }
         Writer cmower = new Writer(18,"沉默王二","Web全栈开发进阶之路");
         System.out.println(JsonSerializer.serialize(cmower));
+
+        Constructor[] constructors=String.class.getDeclaredConstructors();
+        for(Constructor c:constructors){
+            System.out.println(c);
+        }
+
+
+        //reflection to get An Array
+        Class<?> cls=Class.forName("java.lang.String");
+        Object array= Array.newInstance(cls,25);
+        Array.set(array, 0, "Scala");
+        Array.set(array, 1, "Java");
+        Array.set(array, 2, "Groovy");
+        Array.set(array, 3, "Scala");
+        Array.set(array, 4, "Clojure");
+        System.out.println(Array.get(array,2));
+
+        StaticProxy sp=new StaticProxy();
+        sp.hello("brilley");
+        sp.bye();
+
+        //Dynamic proxy
+        Subject realSubject=new RealSubject();
+
+        InvocationHandler handler=new InvocationHandlerDemo(realSubject);
+
+        Subject subject=(Subject) Proxy.newProxyInstance(handler.getClass().getClassLoader(), realSubject.getClass().getInterfaces(),handler);
+        System.out.println(subject.getClass().getName());
+        subject.hello("World");
+        String result=subject.bye();
+        System.out.println("Real result is "+result);
+
+        ImmutableString.strTest();
+
+
     }
 }

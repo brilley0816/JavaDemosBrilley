@@ -1,11 +1,15 @@
 package Brilley.JavaLearn;
 import Brilley.Chapter01.*;
+import javafx.scene.shape.Circle;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class Main {
-    public static void main(String[] args) throws CloneNotSupportedException {
+    public static void main(String[] args) throws CloneNotSupportedException, IllegalAccessException {
+        //Initialize : files created at the beginning
+        /*
         System.out.println("hello world! This is Brilley Java learning demos ensembles!");
         StaticDataDemo sdd=new StaticDataDemo();
         System.out.println("directly use the Class's static data: Class.a: "+ StaticDataDemo.a);
@@ -14,7 +18,10 @@ public class Main {
         Test te=new Test();
         te.Info();
 
+         */
+
         //03-01
+        /*
         InstanceMethod im=new InstanceMethod();
         im.printName();
         //we can modify the static variable value ,if the instance method can modify the  static value
@@ -33,7 +40,10 @@ public class Main {
 
         ExtendsInitBlock eib=new ExtendsInitBlock();
 
+         */
+
         //03-02
+        /*
         AppleIpad aIpad=new AppleIpad();
         System.out.println(aIpad.getElectricityUse());
         aIpad.printDescription();
@@ -66,6 +76,70 @@ public class Main {
         stu1.printInfo();
         stu2.printInfo();
 
+         */
 
+        //03-03
+        /*
+        //String is created by char[] in Java 8 and below version, from Java 9, the String has been created by byte[]
+        // char is 2 bytes
+        String strPool="strPool";
+        String strPool2="strPool";
+        //equals method is used to compare the value, of course they have the same values, so the output is true;
+        //System.out.println(strPool.equals(StrPool2));
+        // the output is true because the variables string value has been put in StringPool;
+        System.out.println(strPool==strPool2);
+        String strPool3=new String("StringPool");
+        String strPool4=new String("StringPool");
+        //System.out.println(strPool3.equals(strPool4));
+        System.out.println(strPool3==strPool4);
+
+        //error! Singleton has a private access
+        //Singleton sing=new Singleton();
+        // singleton is one type build method.
+        Singleton sing;
+        sing=Singleton.getInstance();
+        System.out.println(sing.name);
+
+         */
+
+        //03-04
+        ThisAsMethodResult tamr=new ThisAsMethodResult();
+        //out method is a default private access, this is not in the same package
+        //tamr.ou  add public access in the Class
+        tamr.out();
+        tamr.getThisAsMethodResult().out();
+        System.out.println(tamr instanceof ThisAsMethodResult);//true // corresponding to the relation "is a "
+        //System.out.println(tamr instanceof Circle);
+        System.out.println(null instanceof Circle);
+        ThisAsMethodResult thisTamr;
+        //System.out.println(thisTamr instanceof Circle);
+
+        //03-12
+        NoGenericArraylist list1=new NoGenericArraylist(5);
+        list1.add("brilley");
+        list1.add(new Date());
+        //System.out.println(list1); NullPointerException
+        String listE1=(String) list1.get(0);
+        Date listE2=(Date) list1.get(1);
+        System.out.println(listE1+listE2);
+
+        GenericArraylist<String> list2=new GenericArraylist<>(5);
+        list2.add("brilley");
+        list2.add("yanyan");
+        System.out.println(list2);
+        System.out.println(list2.get(0));
+        GenericArraylist<Date> list3=new GenericArraylist<>(5);
+        list3.add(new Date());
+        list3.add(new Date());
+        System.out.println(list3);
+        System.out.println(list3.get(1));
+        String[] strsTest=new String[2];
+        strsTest=list2.toArray(strsTest);
+        for(String str:strsTest)
+        {
+            System.out.println(str);
+        }
+        Writer cmower = new Writer(18,"沉默王二","Web全栈开发进阶之路");
+        System.out.println(JsonSerializer.serialize(cmower));
     }
 }

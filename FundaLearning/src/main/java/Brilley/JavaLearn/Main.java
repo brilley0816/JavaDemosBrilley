@@ -1,15 +1,9 @@
 package Brilley.JavaLearn;
-import Brilley.Chapter01.*;
-import Brilley.Chapter02.ImmutableString;
-import javafx.scene.shape.Circle;
+import Brilley.Chapter02.ContactString;
+import Brilley.Chapter02.SplitString;
+import Brilley.Chapter03.ArrayTest;
 
-import java.lang.reflect.Array;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.Proxy;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.util.Objects;
 
 public class Main {
     public static void main(String[] args) throws CloneNotSupportedException, IllegalAccessException, ClassNotFoundException {
@@ -108,6 +102,7 @@ public class Main {
          */
 
         //03-04
+        /*
         ThisAsMethodResult tamr=new ThisAsMethodResult();
         //out method is a default private access, this is not in the same package
         //tamr.ou  add public access in the Class
@@ -119,7 +114,10 @@ public class Main {
         ThisAsMethodResult thisTamr;
         //System.out.println(thisTamr instanceof Circle);
 
+         */
+
         //03-12
+        /*
         NoGenericArraylist list1=new NoGenericArraylist(5);
         list1.add("brilley");
         list1.add(new Date());
@@ -180,6 +178,32 @@ public class Main {
 
         ImmutableString.strTest();
 
+         */
 
+
+        //03-13
+        //value equal
+        String name1="brilley";
+        String name2="brilley";
+        System.out.println(name2.equals(name1));
+        //reference equal
+        System.out.println(name1==name2);
+        System.out.println(Objects.equals(name1,name2));
+
+        StringBuffer name3=new StringBuffer("brilley");
+        System.out.println(name3.equals(name1));
+        System.out.println(name1.contentEquals(name3));
+
+        // the result is so obvious!
+        ContactString.addOperator();
+        ContactString.strBuildOperator();
+
+        SplitString.test1();
+        SplitString.test2();
+        SplitString.testPattern();
+        SplitString.test3();
+
+        ArrayTest.test();
+        ArrayTest.printArray();
     }
 }

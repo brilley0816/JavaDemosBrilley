@@ -2,11 +2,13 @@ package Brilley.JavaLearn;
 import Brilley.Chapter02.ContactString;
 import Brilley.Chapter02.SplitString;
 import Brilley.Chapter03.ArrayTest;
+import Brilley.Chapter03.GenericTypeTest;
+import Brilley.Chapter03.MyArray;
 
 import java.util.Objects;
 
 public class Main {
-    public static void main(String[] args) throws CloneNotSupportedException, IllegalAccessException, ClassNotFoundException {
+    public static void main(String[] args) throws Exception {
         //Initialize : files created at the beginning
         /*
         System.out.println("hello world! This is Brilley Java learning demos ensembles!");
@@ -182,6 +184,7 @@ public class Main {
 
 
         //03-13
+        /*
         //value equal
         String name1="brilley";
         String name2="brilley";
@@ -205,5 +208,27 @@ public class Main {
 
         ArrayTest.test();
         ArrayTest.printArray();
+
+        GenericTypeTest.test();
+        GenericTypeTest.test2();
+
+         */
+
+        //03-14
+        MyArray myarr=new MyArray(5);
+        myarr.insert(0,10);
+        myarr.insert(1,2);
+        myarr.insert(2,3);
+        myarr.insert(1,4);
+        //[10, 4, 2, 3, 0]
+        System.out.println(myarr.length());
+        myarr.insert(3,5);
+        System.out.println(myarr.length());
+        myarr.insert(4,8);
+        myarr.insert(5,9);
+        System.out.println(myarr.length());
+        myarr.print();
+        myarr.delete(1);
+        myarr.print();
     }
 }

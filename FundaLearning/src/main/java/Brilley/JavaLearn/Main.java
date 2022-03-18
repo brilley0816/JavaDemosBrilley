@@ -4,7 +4,9 @@ import Brilley.Chapter02.SplitString;
 import Brilley.Chapter03.ArrayTest;
 import Brilley.Chapter03.GenericTypeTest;
 import Brilley.Chapter03.MyArray;
+import Brilley.Chapter04.*;
 
+import java.util.ArrayList;
 import java.util.Objects;
 
 public class Main {
@@ -215,6 +217,7 @@ public class Main {
          */
 
         //03-14
+        /*
         MyArray myarr=new MyArray(5);
         myarr.insert(0,10);
         myarr.insert(1,2);
@@ -230,5 +233,59 @@ public class Main {
         myarr.print();
         myarr.delete(1);
         myarr.print();
+
+         */
+
+        //03-15
+        /*
+        MyQueue myqueue=new MyQueue(5);
+        myqueue.enQueue(2);
+        myqueue.enQueue(3);
+        myqueue.enQueue(4);
+        //
+        myqueue.output();
+        myqueue.quitQueue();
+        myqueue.quitQueue();
+        myqueue.output();
+
+         */
+
+        //03-16
+        /*
+        MyIntArrList myIntArrList=new MyIntArrList();
+        myIntArrList.add(2);
+        myIntArrList.add(3);
+        myIntArrList.add(4);
+        myIntArrList.print();
+        System.out.println(myIntArrList.count());
+        System.out.println(myIntArrList.get(1));
+        myIntArrList.delete(1);
+        System.out.println(myIntArrList.get(1));
+        myIntArrList.print();
+
+        MyLinkedList<String> mylList=new MyLinkedList<>();
+        mylList.add("brilley");
+        mylList.add("yanyan");
+        mylList.print();
+
+         */
+
+        //03-17
+        ArrayListTest.addFromFirst(100000);
+        ArrayListTest.addFromMid(100000);
+        ArrayListTest.addFromLast(100000);
+//        LinkedListTest.addFromFrist(100000);
+//        LinkedListTest.addFromMid(100000);
+//        LinkedListTest.addFromLast(100000);
+        LinkedListTest.forPrint(10000);
+        LinkedListTest.iteratorPrint(10000);
+
+        MySinglyLinkedList list=new MySinglyLinkedList();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.print();
+        list.reverseList();
+        list.print();
     }
 }

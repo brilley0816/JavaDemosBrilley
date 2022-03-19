@@ -8,9 +8,9 @@ public interface Electronic {
     int getElectricityUse();
 
     //static method
-    static boolean isEnergyEfficient(String electronicType) {
-        return electronicType.equals("LED");
-    }
+//    static boolean isEnergyEfficient(String electronicType) {
+//        return electronicType.equals("LED");
+//    }
 
     //default method
     default void printDescription() {

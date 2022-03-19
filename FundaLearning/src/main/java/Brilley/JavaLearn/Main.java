@@ -1,13 +1,14 @@
 package Brilley.JavaLearn;
 import Brilley.Chapter02.ContactString;
-import Brilley.Chapter02.SplitString;
-import Brilley.Chapter03.ArrayTest;
-import Brilley.Chapter03.GenericTypeTest;
+//import Brilley.Chapter02.SplitString;
+//import Brilley.Chapter03.ArrayTest;
+//import Brilley.Chapter03.GenericTypeTest;
 import Brilley.Chapter03.MyArray;
 import Brilley.Chapter04.*;
+import Brilley.Chapter05.ExceptionTest;
 
 import java.util.ArrayList;
-import java.util.Objects;
+//import java.util.Objects;
 
 public class Main {
     public static void main(String[] args) throws Exception {
@@ -271,12 +272,13 @@ public class Main {
          */
 
         //03-17
+        /*
         ArrayListTest.addFromFirst(100000);
         ArrayListTest.addFromMid(100000);
         ArrayListTest.addFromLast(100000);
-//        LinkedListTest.addFromFrist(100000);
-//        LinkedListTest.addFromMid(100000);
-//        LinkedListTest.addFromLast(100000);
+        LinkedListTest.addFromFrist(100000);
+        LinkedListTest.addFromMid(100000);
+        LinkedListTest.addFromLast(100000);
         LinkedListTest.forPrint(10000);
         LinkedListTest.iteratorPrint(10000);
 
@@ -287,5 +289,35 @@ public class Main {
         list.print();
         list.reverseList();
         list.print();
+
+         */
+
+        //03-18
+        /*
+        CircleQueue cirQueue=new CircleQueue(6);
+        cirQueue.enQueue("brilley");
+        cirQueue.enQueue("love");
+        cirQueue.enQueue("yanyan");
+        cirQueue.print();
+        cirQueue.quitQueue();
+        cirQueue.quitQueue();
+        cirQueue.enQueue("super love");
+        cirQueue.enQueue("brilley");
+        cirQueue.print();
+        System.out.println(cirQueue.quitQueue());
+        System.out.println(cirQueue.quitQueue());
+        System.out.println(cirQueue.quitQueue());
+        System.out.println(cirQueue.quitQueue());
+        cirQueue.print();
+         */
+
+        //03-19
+        ExceptionTest.test1("Singleton");
+        ExceptionTest.test1("Singleton2");
+        System.out.println("the programme is going on");
+        ExceptionTest.test2("Singleton");
+        ExceptionTest.test2("Singleton1");
+        System.out.println("the programme is going on");
+
     }
 }

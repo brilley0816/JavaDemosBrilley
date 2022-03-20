@@ -6,7 +6,10 @@ import Brilley.Chapter02.ContactString;
 import Brilley.Chapter03.MyArray;
 import Brilley.Chapter04.*;
 import Brilley.Chapter05.ExceptionTest;
+import Brilley.Chapter06.ArraysTools;
+import javafx.util.converter.LocalDateTimeStringConverter;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 //import java.util.Objects;
 
@@ -312,12 +315,23 @@ public class Main {
          */
 
         //03-19
+        /*
         ExceptionTest.test1("Singleton");
         ExceptionTest.test1("Singleton2");
         System.out.println("the programme is going on");
         ExceptionTest.test2("Singleton");
-        ExceptionTest.test2("Singleton1");
+        //ExceptionTest.test2("Singleton1");
         System.out.println("the programme is going on");
+        System.out.println("I love yanyan!");
+        LocalDateTime time1=LocalDateTime.now();
+        System.out.println(time1);
+        time1=LocalDateTime.now();
+        System.out.println(time1);
+
+         */
+
+        //03-20
+        ArraysTools.test1();
 
     }
 }

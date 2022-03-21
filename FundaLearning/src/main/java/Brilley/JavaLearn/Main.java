@@ -7,6 +7,9 @@ import Brilley.Chapter03.MyArray;
 import Brilley.Chapter04.*;
 import Brilley.Chapter05.ExceptionTest;
 import Brilley.Chapter06.ArraysTools;
+import Brilley.Chapter06.CollectionsTools;
+import Brilley.Chapter06.GuavaTest;
+import Brilley.Chapter06.Hutools;
 import javafx.util.converter.LocalDateTimeStringConverter;
 
 import java.time.LocalDateTime;
@@ -331,7 +334,17 @@ public class Main {
          */
 
         //03-20
+        /*
         ArraysTools.test1();
+        CollectionsTools.test1();
+        Hutools.test1();
+        GuavaTest.testOptional();
+        GuavaTest.testImmutable();
+
+         */
+
+        //03-21
+        
 
     }
 }

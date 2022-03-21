@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ec4c7e1-8b66-4474-a9f8-49ecaf5044cb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDemosBrilley.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDemosBrilley.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Brilley/JavaLearn/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Brilley/JavaLearn/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,9 +32,9 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="F:\Maven-repository" />
-        <option name="mavenHome" value="F:/apache-maven-3.8.4-bin" />
-        <option name="userSettingsFile" value="F:\apache-maven-3.8.4-bin\conf\settings.xml" />
+        <option name="localRepository" value="D:\Maven-repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../apache-maven-3.8.4-bin" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.8.4-bin\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -70,13 +72,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -100,6 +104,12 @@
       <workItem from="1647696546560" duration="1863000" />
       <workItem from="1647698632279" duration="117000" />
       <workItem from="1647763657253" duration="1102000" />
+      <workItem from="1647776066105" duration="2316000" />
+      <workItem from="1647788727339" duration="361000" />
+      <workItem from="1647789237318" duration="94000" />
+      <workItem from="1647789345040" duration="812000" />
+      <workItem from="1647824508232" duration="133000" />
+      <workItem from="1647844035519" duration="823000" />
     </task>
     <servers />
   </component>

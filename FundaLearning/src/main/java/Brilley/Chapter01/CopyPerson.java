@@ -12,6 +12,11 @@ public class CopyPerson implements Cloneable {
         this.name=name;
         this.age=age;
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public void printInfo()
     {
         System.out.println("The person's name is: "+name+" and the age is "+age);

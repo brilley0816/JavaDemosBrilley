@@ -10,10 +10,16 @@ import Brilley.Chapter06.ArraysTools;
 import Brilley.Chapter06.CollectionsTools;
 import Brilley.Chapter06.GuavaTest;
 import Brilley.Chapter06.Hutools;
+import Brilley.Chapter07.BoxingUnboxingTest;
+import Brilley.Chapter07.IOTest;
+import Brilley.Chapter07.ParameterTransfer;
+import Brilley.SortAlgorithms.SortedInPlace;
 import javafx.util.converter.LocalDateTimeStringConverter;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Random;
 //import java.util.Objects;
 
 public class Main {
@@ -344,7 +350,50 @@ public class Main {
          */
 
         //03-21
-        
+        /*
+        BoxingUnboxingTest.test1();
+        BoxingUnboxingTest.test2();
+        //BoxingUnboxingTest.testEfficiency();
+        //the time to compute the sum of 0-Integer.MAX_VALUE by float type variable: 5583
+        //the time to compute the sum of 0-Integer.MAX_VALUE by float type variable: 575
+
+        Random r=new Random();
+        int[] arrs=new int[]{r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100)};
+        System.out.println(Arrays.toString(arrs));
+        SortedInPlace.bubbleSort(arrs);
+        int[] arrsb=new int[]{r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100)};
+        System.out.println(Arrays.toString(arrsb));
+        SortedInPlace.insertSort(arrsb);
+        SortedInPlace.selectSort(arrsb);
+        int[] testArray=new int[10000];
+        for(int i=0;i<testArray.length;i++)
+            testArray[i]=r.nextInt(1000);
+        System.out.println(Arrays.toString(testArray));
+        long t1=System.currentTimeMillis();
+        System.out.println("sort algorithm: bubble: ");
+        SortedInPlace.bubbleSort(testArray);
+        long t2=System.currentTimeMillis();
+        System.out.println("spend time: "+(t2-t1));
+
+        System.out.println("sort algorithm: insert: ");
+        SortedInPlace.insertSort(testArray);
+        long t3=System.currentTimeMillis();
+        System.out.println("spend time: "+(t3-t2));
+
+        System.out.println("sort algorithm:select: ");
+        SortedInPlace.selectSort(testArray);
+        long t4=System.currentTimeMillis();
+        System.out.println("spend time: "+(t4-t3));
+
+         */
+
+        //03-23
+        ParameterTransfer.test1();
+        IOTest.test1();
+        IOTest.test2();
+        IOTest.test3();
+        IOTest.test4();
+
 
     }
 }

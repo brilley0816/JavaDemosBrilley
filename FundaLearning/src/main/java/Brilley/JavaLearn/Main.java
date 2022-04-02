@@ -1,4 +1,5 @@
 package Brilley.JavaLearn;
+import Brilley.BinaryTree.BinaryTree;
 import Brilley.Chapter02.ContactString;
 //import Brilley.Chapter02.SplitString;
 //import Brilley.Chapter03.ArrayTest;
@@ -13,12 +14,18 @@ import Brilley.Chapter06.Hutools;
 import Brilley.Chapter07.BoxingUnboxingTest;
 import Brilley.Chapter07.IOTest;
 import Brilley.Chapter07.ParameterTransfer;
+import Brilley.SearchAlgorithms.BinarySearch;
+import Brilley.SortAlgorithms.MergeSort;
+import Brilley.SortAlgorithms.QuickSort;
 import Brilley.SortAlgorithms.SortedInPlace;
+import Brilley.concurrent.ThreadTest;
+import Brilley.jvm.ClassLoaderTest;
 import javafx.util.converter.LocalDateTimeStringConverter;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.Random;
 //import java.util.Objects;
 
@@ -388,12 +395,55 @@ public class Main {
          */
 
         //03-23
+        /*
         ParameterTransfer.test1();
         IOTest.test1();
         IOTest.test2();
         IOTest.test3();
         IOTest.test4();
 
+         */
 
+        /*
+        //03-24
+        //ThreadTest.test1();
+        //System.out.println("Daemon has been set");
+        //ThreadTest.test2();
+        //System.out.println("Thread Join has been set");
+        //ThreadTest.test3();
+        Random r=new Random();
+        int[] arrs=new int[]{r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100)};
+        //MergeSort.sort(arrs);
+        //QuickSort.sort(arrs);
+        System.out.println(QuickSort.kthMaxValue(arrs,3));
+        QuickSort.sort(arrs);
+        ClassLoaderTest.test1();
+
+         */
+
+        //0329-0331
+        /*
+        Random r=new Random();
+        int[] arrs=new int[]{r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100)};
+        int val=arrs[0];
+        arrs[1]=val;
+        System.out.println(Arrays.toString(arrs));
+        QuickSort.sort(arrs);
+        System.out.println("BinarySearch Result is "+BinarySearch.searchImp1(arrs,8));
+        System.out.println("BinarySearch Result is"+BinarySearch.searchImp1(arrs,9));
+        System.out.println("BinarySearch Result is "+BinarySearch.searchImp1(arrs,10));
+        System.out.println("BinarySearch Result is "+BinarySearch.searchImp1(arrs,22));
+        System.out.println("BinarySearch Result is "+BinarySearch.searchImp2(arrs,0,arrs.length-1,22));
+        System.out.println("BinarySearch Result is "+BinarySearch.searchImp2(arrs,0,arrs.length-1,23));
+        System.out.println("the length of arrays is "+arrs.length);
+        System.out.println("BinarySearch Result is "+BinarySearch.bSearchFirst(arrs,0,arrs.length-1,val));
+        System.out.println("BinarySearch Result is "+BinarySearch.bSearchLast(arrs,0,arrs.length-1,val));
+        System.out.println("BinarySearch Result is "+BinarySearch.bSearchFirstGreaterOrEqual(arrs,0,arrs.length-1,val-1));
+        System.out.println("BinarySearch Result is "+BinarySearch.bSearchLastLessOrEqual(arrs,0,arrs.length-1,val));
+
+         */
+
+        //04-01
+        BinaryTree.test1();
     }
 }

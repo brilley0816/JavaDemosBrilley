@@ -1,5 +1,7 @@
 package Brilley.JavaLearn;
+import Brilley.BinaryTree.BinaryHeap;
 import Brilley.BinaryTree.BinaryTree;
+import Brilley.BinaryTree.MyPriorityQueue;
 import Brilley.Chapter02.ContactString;
 //import Brilley.Chapter02.SplitString;
 //import Brilley.Chapter03.ArrayTest;
@@ -14,6 +16,8 @@ import Brilley.Chapter06.Hutools;
 import Brilley.Chapter07.BoxingUnboxingTest;
 import Brilley.Chapter07.IOTest;
 import Brilley.Chapter07.ParameterTransfer;
+import Brilley.ClassicalAlgorithmsProblems.CommonDivisor;
+import Brilley.ClassicalAlgorithmsProblems.IsPowerOf2;
 import Brilley.SearchAlgorithms.BinarySearch;
 import Brilley.SortAlgorithms.MergeSort;
 import Brilley.SortAlgorithms.QuickSort;
@@ -445,5 +449,32 @@ public class Main {
 
         //04-01
         BinaryTree.test1();
+
+        //04-04
+        BinaryHeap.test1();
+
+        MyPriorityQueue mpq=new MyPriorityQueue();
+        mpq.enQueue(1);
+        mpq.enQueue(8);
+        mpq.enQueue(4);
+        mpq.enQueue(17);
+        mpq.enQueue(8);
+        mpq.enQueue(10);
+        System.out.println("deQueue: "+mpq.deQueue());
+        System.out.println("deQueue: "+mpq.deQueue());
+        System.out.println("deQueue: "+mpq.deQueue());
+
+        Random r=new Random();
+        int[] arrs=new int[]{r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100)};
+        //QuickSort.sort(arrs);
+        BinaryHeap.heapSort(arrs);
+        int a=r.nextInt(100);
+        int b=r.nextInt(1000);
+        System.out.println("The greatest common divisor between "+a+" "+b+ " is: "+CommonDivisor.getGreatestCommonDivisorV1(a,b));
+        System.out.println("The greatest common divisor between "+a+" "+b+ " is: "+CommonDivisor.getGreatestCommonDivisorV2(a,b));
+        System.out.println("The greatest common divisor between "+a+" "+b+ " is: "+CommonDivisor.getGreatestCommonDivisorV3(a,b));
+        System.out.println("The greatest common divisor between "+a+" "+b+ " is: "+CommonDivisor.getGreatestCommonDivisorV4(a,b));
+        System.out.println(a+" is a number power of 2? "+IsPowerOf2.isPowerOf2(a));
+        System.out.println(b+" is a number power of 2? "+IsPowerOf2.isPowerOf2(b));
     }
 }

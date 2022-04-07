@@ -18,19 +18,21 @@ import Brilley.Chapter07.IOTest;
 import Brilley.Chapter07.ParameterTransfer;
 import Brilley.ClassicalAlgorithmsProblems.CommonDivisor;
 import Brilley.ClassicalAlgorithmsProblems.IsPowerOf2;
+import Brilley.ClassicalAlgorithmsProblems.StackQueue;
+import Brilley.DynamicProgramming.MaximumGold;
 import Brilley.SearchAlgorithms.BinarySearch;
+import Brilley.SortAlgorithms.DictionarySort;
 import Brilley.SortAlgorithms.MergeSort;
 import Brilley.SortAlgorithms.QuickSort;
 import Brilley.SortAlgorithms.SortedInPlace;
+import Brilley.Stream.ScannerTest;
 import Brilley.concurrent.ThreadTest;
 import Brilley.jvm.ClassLoaderTest;
 import javafx.util.converter.LocalDateTimeStringConverter;
 
+import java.sql.SQLClientInfoException;
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.Random;
+import java.util.*;
 //import java.util.Objects;
 
 public class Main {
@@ -447,6 +449,7 @@ public class Main {
 
          */
 
+        /*
         //04-01
         BinaryTree.test1();
 
@@ -476,5 +479,29 @@ public class Main {
         System.out.println("The greatest common divisor between "+a+" "+b+ " is: "+CommonDivisor.getGreatestCommonDivisorV4(a,b));
         System.out.println(a+" is a number power of 2? "+IsPowerOf2.isPowerOf2(a));
         System.out.println(b+" is a number power of 2? "+IsPowerOf2.isPowerOf2(b));
+
+         */
+
+        //04-06
+        MaximumGold.test1();
+
+        //04-06
+        MaximumGold.test2();
+        MaximumGold.test3();
+
+        StackQueue sq1=new StackQueue();
+        sq1.enQueue(1);
+        sq1.enQueue(23);
+        sq1.enQueue(54);
+        System.out.println(sq1.deQueue());
+        System.out.println(sq1.deQueue());
+        System.out.println(sq1.deQueue());
+        System.out.println(sq1.deQueue());
+        int[] testArr=new int[]{1,4,6,3,5};
+        DictionarySort.findNearBiggestValue(testArr);
+
+        //ScannerTest.test1();
+        //ScannerTest.test2();
+        ScannerTest.test3();
     }
 }

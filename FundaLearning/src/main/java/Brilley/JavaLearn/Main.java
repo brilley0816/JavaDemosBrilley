@@ -18,6 +18,7 @@ import Brilley.Chapter07.IOTest;
 import Brilley.Chapter07.ParameterTransfer;
 import Brilley.ClassicalAlgorithmsProblems.CommonDivisor;
 import Brilley.ClassicalAlgorithmsProblems.IsPowerOf2;
+import Brilley.ClassicalAlgorithmsProblems.RemoveKDigits;
 import Brilley.ClassicalAlgorithmsProblems.StackQueue;
 import Brilley.DynamicProgramming.MaximumGold;
 import Brilley.SearchAlgorithms.BinarySearch;
@@ -28,6 +29,8 @@ import Brilley.SortAlgorithms.SortedInPlace;
 import Brilley.Stream.ScannerTest;
 import Brilley.concurrent.ThreadTest;
 import Brilley.jvm.ClassLoaderTest;
+import Brilley.stringRelated.EncodeString;
+import Brilley.util.TimeComplexity;
 import javafx.util.converter.LocalDateTimeStringConverter;
 
 import java.sql.SQLClientInfoException;
@@ -483,6 +486,7 @@ public class Main {
          */
 
         //04-06
+        /*
         MaximumGold.test1();
 
         //04-06
@@ -503,5 +507,12 @@ public class Main {
         //ScannerTest.test1();
         //ScannerTest.test2();
         ScannerTest.test3();
+
+         */
+
+        //04-11
+        //RemoveKDigits.test1();
+        //TimeComplexity.test1();
+        EncodeString.test2();
     }
 }

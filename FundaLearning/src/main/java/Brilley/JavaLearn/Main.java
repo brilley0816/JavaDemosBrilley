@@ -16,17 +16,14 @@ import Brilley.Chapter06.Hutools;
 import Brilley.Chapter07.BoxingUnboxingTest;
 import Brilley.Chapter07.IOTest;
 import Brilley.Chapter07.ParameterTransfer;
-import Brilley.ClassicalAlgorithmsProblems.CommonDivisor;
-import Brilley.ClassicalAlgorithmsProblems.IsPowerOf2;
-import Brilley.ClassicalAlgorithmsProblems.RemoveKDigits;
-import Brilley.ClassicalAlgorithmsProblems.StackQueue;
+import Brilley.ClassicalAlgorithmsProblems.*;
 import Brilley.DynamicProgramming.MaximumGold;
 import Brilley.SearchAlgorithms.BinarySearch;
-import Brilley.SortAlgorithms.DictionarySort;
+//import Brilley.SortAlgorithms.DictionarySort;
 import Brilley.SortAlgorithms.MergeSort;
 import Brilley.SortAlgorithms.QuickSort;
 import Brilley.SortAlgorithms.SortedInPlace;
-import Brilley.Stream.ScannerTest;
+//import Brilley.Stream.ScannerTest;
 import Brilley.concurrent.ThreadTest;
 import Brilley.jvm.ClassLoaderTest;
 import Brilley.stringRelated.EncodeString;
@@ -513,6 +510,28 @@ public class Main {
         //04-11
         //RemoveKDigits.test1();
         //TimeComplexity.test1();
-        EncodeString.test2();
+        //EncodeString.test2();
+
+        //04-12
+        /*
+        LRUCache lruCache = new LRUCache(5);
+        lruCache.put(1, 3);
+        lruCache.put(2, 3);
+        lruCache.put(3, 3);
+        lruCache.put(4, 3);
+        lruCache.put(5, 3);
+        lruCache.print();
+        lruCache.get(2);
+        lruCache.print();
+        lruCache.put(3,5);
+        lruCache.print();
+        lruCache.put(6,5);
+        lruCache.print();
+
+         */
+
+        //04-21
+        ScoreNum.test1();
+
     }
 }

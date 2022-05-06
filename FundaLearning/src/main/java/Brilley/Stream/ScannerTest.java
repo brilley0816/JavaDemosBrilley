@@ -16,7 +16,6 @@ public class ScannerTest {
         Scanner inStream=new Scanner(System.in);
         String str1=inStream.next();
         String str2=inStream.next();
-        inStream.next
         System.out.println("str1 is: "+str1);
         System.out.println("str2 is: "+str2);
     }

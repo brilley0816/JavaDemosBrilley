@@ -1,4 +1,6 @@
 package Brilley.JavaLearn;
+import Brilley.BackTracking.EightQueens;
+import Brilley.BackTracking.KnapsackPro;
 import Brilley.BinaryTree.BinaryHeap;
 import Brilley.BinaryTree.BinaryTree;
 import Brilley.BinaryTree.MyPriorityQueue;
@@ -17,7 +19,9 @@ import Brilley.Chapter07.BoxingUnboxingTest;
 import Brilley.Chapter07.IOTest;
 import Brilley.Chapter07.ParameterTransfer;
 import Brilley.ClassicalAlgorithmsProblems.*;
+import Brilley.DynamicProgramming.KnapsackProDP;
 import Brilley.DynamicProgramming.MaximumGold;
+import Brilley.DynamicProgramming.MetrixLongestPath;
 import Brilley.SearchAlgorithms.BinarySearch;
 //import Brilley.SortAlgorithms.DictionarySort;
 import Brilley.SortAlgorithms.MergeSort;
@@ -531,7 +535,22 @@ public class Main {
          */
 
         //04-21
-        ScoreNum.test1();
+        //ScoreNum.test1();
+
+        //05-06
+        EightQueens.cal8queens(0);
+        System.out.println(EightQueens.nums);
+        KnapsackPro.findMaxWeight1(0,0);
+        System.out.println(KnapsackPro.wMax);
+        System.out.println(KnapsackPro.nums);
+        KnapsackPro.findMaxWeight2(0,0);
+        System.out.println(KnapsackPro.wMax);
+        System.out.println(KnapsackPro.nums);
+        KnapsackProDP.knapsack();
+        KnapsackProDP.knapsack2();
+        KnapsackProDP.knapsack3();
+        System.out.println("Longest path: " + MetrixLongestPath.findLongestPath2(3,3));
+        MetrixLongestPath.findLongestPath();
 
     }
 }

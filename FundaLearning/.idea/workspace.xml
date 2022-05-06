@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9ec4c7e1-8b66-4474-a9f8-49ecaf5044cb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Brilley/ClassicalAlgorithmsProblems/RemoveNthFromEnd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Brilley/ClassicalAlgorithmsProblems/RemoveNthFromEnd.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Brilley/JavaLearn/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Brilley/JavaLearn/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Brilley/Stream/ScannerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Brilley/Stream/ScannerTest.java" afterDir="false" />
     </list>
@@ -71,15 +72,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -133,7 +132,10 @@
       <workItem from="1650343258836" duration="65000" />
       <workItem from="1650511646633" duration="615000" />
       <workItem from="1650621169279" duration="921000" />
-      <workItem from="1651113904609" duration="3889000" />
+      <workItem from="1651113904609" duration="5288000" />
+      <workItem from="1651827117255" duration="3688000" />
+      <workItem from="1651837236111" duration="5545000" />
+      <workItem from="1651849578131" duration="2262000" />
     </task>
     <servers />
   </component>

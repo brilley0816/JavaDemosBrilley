@@ -13,7 +13,7 @@ public class RemoveNthFromEnd {
         ListNode() {}
         ListNode(int val) {this.val = val; }
         ListNode(int val, ListNode next) {this.val =val; this.next = next; }
-    } 
+    }
     public ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode virHead = new ListNode(0,head);
         ListNode fast = virHead;

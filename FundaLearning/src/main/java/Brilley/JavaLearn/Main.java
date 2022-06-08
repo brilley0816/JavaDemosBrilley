@@ -1,6 +1,7 @@
 package Brilley.JavaLearn;
 import Brilley.BackTracking.EightQueens;
 import Brilley.BackTracking.KnapsackPro;
+import Brilley.BackTracking.LWSTDistance;
 import Brilley.BinaryTree.BinaryHeap;
 import Brilley.BinaryTree.BinaryTree;
 import Brilley.BinaryTree.MyPriorityQueue;
@@ -19,9 +20,7 @@ import Brilley.Chapter07.BoxingUnboxingTest;
 import Brilley.Chapter07.IOTest;
 import Brilley.Chapter07.ParameterTransfer;
 import Brilley.ClassicalAlgorithmsProblems.*;
-import Brilley.DynamicProgramming.KnapsackProDP;
-import Brilley.DynamicProgramming.MaximumGold;
-import Brilley.DynamicProgramming.MetrixLongestPath;
+import Brilley.DynamicProgramming.*;
 import Brilley.SearchAlgorithms.BinarySearch;
 //import Brilley.SortAlgorithms.DictionarySort;
 import Brilley.SortAlgorithms.MergeSort;
@@ -414,7 +413,7 @@ public class Main {
 
          */
 
-        /*
+
         //03-24
         //ThreadTest.test1();
         //System.out.println("Daemon has been set");
@@ -425,11 +424,11 @@ public class Main {
         int[] arrs=new int[]{r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100)};
         //MergeSort.sort(arrs);
         //QuickSort.sort(arrs);
-        System.out.println(QuickSort.kthMaxValue(arrs,3));
+        System.out.println(QuickSort.kthMaxValue(arrs,2));
         QuickSort.sort(arrs);
         ClassLoaderTest.test1();
 
-         */
+
 
         //0329-0331
         /*
@@ -538,6 +537,7 @@ public class Main {
         //ScoreNum.test1();
 
         //05-06
+        /*
         EightQueens.cal8queens(0);
         System.out.println(EightQueens.nums);
         KnapsackPro.findMaxWeight1(0,0);
@@ -552,5 +552,75 @@ public class Main {
         System.out.println("Longest path: " + MetrixLongestPath.findLongestPath2(3,3));
         MetrixLongestPath.findLongestPath();
 
+         */
+
+        //05-07
+        /*
+        long t1 = System.currentTimeMillis();
+        LWSTDistance.lwstDistance("mitcmu","matcnu");
+        LWSTDistance.lwstDistance("mitcmu","mtacnu");
+        LWSTDistance.lwstDistance("brilley","mtacnu");
+        //LWSTDistance.lwstDistance2("brilleybrilleybrilleybrilleybrilleybrilleybrilleybrilley","mtacnumtacnumtacnumtacnumtacnumtacnumtacnu");
+        long t2 = System.currentTimeMillis();
+        System.out.println("time : " + (t2 - t1));
+
+        long t3 = System.currentTimeMillis();
+        LWSTDistance.lwstDistance2("mitcmu","matcnu");
+        LWSTDistance.lwstDistance2("mitcmu","mtacnu");
+        LWSTDistance.lwstDistance2("brilley","mtacnu");
+        //LWSTDistance.lwstDistance2("brilleybrill","mtacnumtacn");
+        long t4 = System.currentTimeMillis();
+        System.out.println("time : " + (t4 - t3));
+
+        long t5 = System.currentTimeMillis();
+        LWSTDistanceDP.lwstDistance1("mitcmu","mtacnu");
+        LWSTDistanceDP.lwstDistance1("mitcmu","matcnu");
+        LWSTDistanceDP.lwstDistance1("brilley","mtacnu");
+        //LWSTDistanceDP.lwstDistance1("brilleybrilleybrilleybrilleybrilleybrilleybrilleybrilley","mtacnumtacnumtacnumtacnumtacnumtacnumtacnu");
+        //LWSTDistanceDP.lwstDistance1("brilleybrilleybrilleybrilleybrilleybrilleybrilleybrilleyyanyan","mtacnumtacnumtacnumtacnumtacnumtacnumtacnu");
+        long t6 = System.currentTimeMillis();
+        System.out.println("time : " + (t6 - t5));
+
+        long t7 = System.currentTimeMillis();
+        LWSTDistanceDP.lwstDistance2("mitcmu", "mtacnu");
+        LWSTDistanceDP.lwstDistance2("mitcmu","matcnu");
+        LWSTDistanceDP.lwstDistance2("brilley","mtacnu");
+        //LWSTDistanceDP.lwstDistance2("brilleybrilleybrilleybrilleybrilleybrilleybrilleybrilley","mtacnumtacnumtacnumtacnumtacnumtacnumtacnu");
+        //LWSTDistanceDP.lwstDistance2("brilleybrilleybrilleybrilleybrilleybrilleybrilleybrilleyyanyan","mtacnumtacnumtacnumtacnumtacnumtacnumtacnu");
+        long t8 = System.currentTimeMillis();
+        System.out.println("time: " + (t8 - t7));
+
+         */
+
+//        long t9 = System.currentTimeMillis();
+//        LongestComStr.getLongestCommonStr("abc","abccd");
+//        long t10 = System.currentTimeMillis();
+//        System.out.println("time: " + (t10 - t9));
+//
+//        long t11 = System.currentTimeMillis();
+//        LongestComStr.getLongestCommonStr2("abc","abccd");
+//        LongestComStr.getLongestCommonStr2("12345","23415");
+//        LongestComStr.getLongestCommonStr2("123459","234159999");
+//        long t12 = System.currentTimeMillis();
+//        System.out.println("time: " + (t12 - t11));
+
+
+        //05-25
+        /*
+        boolean rest = StateMachineForNumInput.isNumber("-18e1919");
+        System.out.println(rest);
+
+         */
+
+        // 06-08
+        LWSTDistanceDP.lwstDistance1("pneumonoultramicroscopicsilicovolcanoconiosis","ultramicroscopically");
+        LWSTDistanceDP.lwstDistance2("pneumonoultramicroscopicsilicovolcanoconiosis","ultramicroscopically");
+        LWSTDistanceDP.lwstDistance3("pneumonoultramicroscopicsilicovolcanoconiosis","ultramicroscopically");
+        LWSTDistanceDP.lwstDistance4("pneumonoultramicroscopicsilicovolcanoconiosis","ultramicroscopically");
+
+        LWSTDistanceDP.lwstDistance1("pneumonoultramicroscopicsili","ultramicroscopically");
+        LWSTDistanceDP.lwstDistance2("pneumonoultramicroscopicsili","ultramicroscopically");
+        LWSTDistanceDP.lwstDistance3("pneumonoultramicroscopicsili","ultramicroscopically");
     }
+
 }

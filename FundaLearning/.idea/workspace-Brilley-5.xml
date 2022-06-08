@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ec4c7e1-8b66-4474-a9f8-49ecaf5044cb" name="Default Changelist" comment="Default Changelist">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="9ec4c7e1-8b66-4474-a9f8-49ecaf5044cb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Brilley/ClassicalAlgorithmsProblems/RemoveNthFromEnd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Brilley/ClassicalAlgorithmsProblems/RemoveNthFromEnd.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Brilley/JavaLearn/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Brilley/JavaLearn/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Brilley/Stream/ScannerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Brilley/Stream/ScannerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,9 +24,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="GoLibraries">
-    <option name="indexEntireGoPath" value="true" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -47,26 +45,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "go.import.settings.migrated": "true",
-    "last_opened_file_path": "G:/OneDrive - bjtu.edu.cn/JavaDemosBrilley/FundaLearning",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -135,27 +136,11 @@
       <workItem from="1650621169279" duration="921000" />
       <workItem from="1651113904609" duration="5288000" />
       <workItem from="1651827117255" duration="3688000" />
-      <workItem from="1651837236111" duration="5545000" />
-      <workItem from="1651849578131" duration="2262000" />
-      <workItem from="1651889567255" duration="13959000" />
-      <workItem from="1652009944221" duration="144000" />
-      <workItem from="1652010245015" duration="140000" />
-      <workItem from="1652072578064" duration="808000" />
-      <workItem from="1652173094118" duration="7000" />
-      <workItem from="1652249280105" duration="1009000" />
-      <workItem from="1652335362761" duration="4063000" />
-      <workItem from="1653463699334" duration="2216000" />
-      <workItem from="1653880327628" duration="782000" />
-      <workItem from="1654137751361" duration="425000" />
-      <workItem from="1654671748932" duration="3509000" />
+      <workItem from="1651837236111" duration="6176000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VgoProject">
-    <integration-enabled>false</integration-enabled>
-    <settings-migrated>true</settings-migrated>
   </component>
 </project>

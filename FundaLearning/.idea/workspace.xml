@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ec4c7e1-8b66-4474-a9f8-49ecaf5044cb" name="Default Changelist" comment="Default Changelist">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Brilley/JavaLearn/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Brilley/JavaLearn/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Brilley/SortAlgorithms/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Brilley/SortAlgorithms/QuickSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Brilley/SortAlgorithms/SortedInPlace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Brilley/SortAlgorithms/SortedInPlace.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Brilley/Stream/ScannerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Brilley/Stream/ScannerTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="9ec4c7e1-8b66-4474-a9f8-49ecaf5044cb" name="Default Changelist" comment="Default Changelist" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,6 +50,7 @@
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
     "WebServerToolWindowFactoryState": "false",
     "go.import.settings.migrated": "true",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -148,7 +143,7 @@
       <workItem from="1657259818351" duration="4418000" />
       <workItem from="1658320277850" duration="1849000" />
       <workItem from="1658398130837" duration="645000" />
-      <workItem from="1658561827220" duration="305000" />
+      <workItem from="1658561827220" duration="620000" />
     </task>
     <servers />
   </component>

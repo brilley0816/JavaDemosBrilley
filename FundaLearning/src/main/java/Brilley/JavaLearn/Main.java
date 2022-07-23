@@ -634,4 +634,7 @@ public class Main {
         MaxRealValue.maxRealValue(m,sellPrice, realValue);
     }
 
+System.out.println("hello! this is from neovim");
+System.out.println("hello! this is from neovim");
+System.out.println("hello! this is from neovim");
 }

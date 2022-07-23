@@ -28,20 +28,18 @@ public class SortedInPlace {
     }
 
     public static void insertSort(int[] arr){
-        for(int i=1;i<arr.length;i++)
-        {
-            int j=i-1;
-            int temp=arr[i];
-            for(;j>=0;j--)
-            {
-                if(arr[j]>temp)
-                {
-                    arr[j+1]=arr[j];
+        for (int i = 1;i < arr.length; i++) {
+            int j = i - 1;
+            int temp = arr[i];
+            for (; j >= 0; j--) {
+                if(arr[j] > temp) {
+                    arr[j+1] = arr[j];
                 }
-                else
+                else {
                     break;
+                }
             }
-            arr[j+1]=temp;
+            arr[j+1] = temp;
         }
         System.out.println(Arrays.toString(arr));
     }

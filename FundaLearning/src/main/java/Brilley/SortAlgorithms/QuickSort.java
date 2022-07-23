@@ -17,28 +17,28 @@ public class QuickSort {
     }
 
     public static void quickSort(int[] arrs,int start, int end){
-        if(start<end){
-            int q=partion_2(arrs,start,end);
-            quickSort(arrs,start,q-1);
-            quickSort(arrs,q+1,end);
+        if (start < end) {
+            int q = partion_2(arrs, start, end);
+            quickSort(arrs, start, q-1);
+            quickSort(arrs, q+1, end);
         }
     }
 
     public static int partion(int[] arrs, int start, int end){
-        int i=start;
-        int j=start;
-        int pivot=arrs[end];
+        int i = start;
+        int j = start;
+        int pivot = arrs[end];
         int temp;
-        for(;j<end;j++){
-            if(arrs[j]<pivot){
-                temp=arrs[j];
-                arrs[j]=arrs[i];
-                arrs[i++]=temp;
+        for (; j < end; j++) {
+            if (arrs[j] < pivot){
+                temp = arrs[j];
+                arrs[j] = arrs[i];
+                arrs[i++] = temp;
             }
         }
-        temp=arrs[i];
-        arrs[i]=arrs[end];
-        arrs[end]=temp;
+        temp = arrs[i];
+        arrs[i] = arrs[end];
+        arrs[end] = temp;
         return i;
     }
 

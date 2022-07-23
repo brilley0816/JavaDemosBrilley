@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class ScannerTest {
     public static void test1(){
-        Scanner inStream=new Scanner(System.in);
+        Scanner inStream = new Scanner(System.in);
         String str1=inStream.next();
         String str2=inStream.next();
         System.out.println("str1 is: "+str1);

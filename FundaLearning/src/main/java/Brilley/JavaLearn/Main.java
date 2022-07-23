@@ -21,6 +21,7 @@ import Brilley.Chapter07.IOTest;
 import Brilley.Chapter07.ParameterTransfer;
 import Brilley.ClassicalAlgorithmsProblems.*;
 import Brilley.DynamicProgramming.*;
+import Brilley.Interview.TheLongestStr;
 import Brilley.SearchAlgorithms.BinarySearch;
 //import Brilley.SortAlgorithms.DictionarySort;
 import Brilley.SortAlgorithms.MergeSort;
@@ -420,13 +421,13 @@ public class Main {
         //ThreadTest.test2();
         //System.out.println("Thread Join has been set");
         //ThreadTest.test3();
-        Random r=new Random();
-        int[] arrs=new int[]{r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100)};
-        //MergeSort.sort(arrs);
-        //QuickSort.sort(arrs);
-        System.out.println(QuickSort.kthMaxValue(arrs,2));
-        QuickSort.sort(arrs);
-        ClassLoaderTest.test1();
+//        Random r=new Random();
+//        int[] arrs=new int[]{r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100),r.nextInt(100)};
+//        //MergeSort.sort(arrs);
+//        //QuickSort.sort(arrs);
+//        System.out.println(QuickSort.kthMaxValue(arrs,2));
+//        QuickSort.sort(arrs);
+//        ClassLoaderTest.test1();
 
 
 
@@ -613,14 +614,24 @@ public class Main {
          */
 
         // 06-08
-        LWSTDistanceDP.lwstDistance1("pneumonoultramicroscopicsilicovolcanoconiosis","ultramicroscopically");
-        LWSTDistanceDP.lwstDistance2("pneumonoultramicroscopicsilicovolcanoconiosis","ultramicroscopically");
-        LWSTDistanceDP.lwstDistance3("pneumonoultramicroscopicsilicovolcanoconiosis","ultramicroscopically");
-        LWSTDistanceDP.lwstDistance4("pneumonoultramicroscopicsilicovolcanoconiosis","ultramicroscopically");
+//        LWSTDistanceDP.lwstDistance1("pneumonoultramicroscopicsilicovolcanoconiosis","ultramicroscopically");
+//        LWSTDistanceDP.lwstDistance2("pneumonoultramicroscopicsilicovolcanoconiosis","ultramicroscopically");
+//        LWSTDistanceDP.lwstDistance3("pneumonoultramicroscopicsilicovolcanoconiosis","ultramicroscopically");
+//        LWSTDistanceDP.lwstDistance4("pneumonoultramicroscopicsilicovolcanoconiosis","ultramicroscopically");
+//
+//        LWSTDistanceDP.lwstDistance1("pneumonoultramicroscopicsili","ultramicroscopically");
+//        LWSTDistanceDP.lwstDistance2("pneumonoultramicroscopicsili","ultramicroscopically");
+//        LWSTDistanceDP.lwstDistance3("pneumonoultramicroscopicsili","ultramicroscopically");
 
-        LWSTDistanceDP.lwstDistance1("pneumonoultramicroscopicsili","ultramicroscopically");
-        LWSTDistanceDP.lwstDistance2("pneumonoultramicroscopicsili","ultramicroscopically");
-        LWSTDistanceDP.lwstDistance3("pneumonoultramicroscopicsili","ultramicroscopically");
+        // 07-08
+//        TheLongestStr.test();
+//        TheLongestStr.test2();
+
+        // 07-20
+        int m = 4;
+        int[]  sellPrice ={6, 6, 1, 3};
+        int[] realValue = {1, 4, 4, 1};
+        MaxRealValue.maxRealValue(m,sellPrice, realValue);
     }
 
 }

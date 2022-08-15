@@ -1,4 +1,4 @@
-package Brilley.Stream;
+package Brilley.IOStream;
 
 import java.io.BufferedReader;
 import java.io.Console;

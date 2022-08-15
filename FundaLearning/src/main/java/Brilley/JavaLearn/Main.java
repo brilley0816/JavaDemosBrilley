@@ -21,6 +21,7 @@ import Brilley.Chapter07.IOTest;
 import Brilley.Chapter07.ParameterTransfer;
 import Brilley.ClassicalAlgorithmsProblems.*;
 import Brilley.DynamicProgramming.*;
+import Brilley.IOStream.BufferedReaderTest;
 import Brilley.Interview.TheLongestStr;
 import Brilley.SearchAlgorithms.BinarySearch;
 //import Brilley.SortAlgorithms.DictionarySort;
@@ -632,5 +633,8 @@ public class Main {
         int[]  sellPrice ={6, 6, 1, 3};
         int[] realValue = {1, 4, 4, 1};
         MaxRealValue.maxRealValue(m,sellPrice, realValue);
+
+        // 08-09
+        BufferedReaderTest.bufferedReaderTest1();
     }
 }

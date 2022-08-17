@@ -23,6 +23,7 @@ import Brilley.ClassicalAlgorithmsProblems.*;
 import Brilley.DynamicProgramming.*;
 import Brilley.IOStream.BufferedReaderTest;
 import Brilley.Interview.TheLongestStr;
+import Brilley.Interview.VolatileTest;
 import Brilley.SearchAlgorithms.BinarySearch;
 //import Brilley.SortAlgorithms.DictionarySort;
 import Brilley.SortAlgorithms.MergeSort;
@@ -629,12 +630,15 @@ public class Main {
 //        TheLongestStr.test2();
 
         // 07-20
-        int m = 4;
-        int[]  sellPrice ={6, 6, 1, 3};
-        int[] realValue = {1, 4, 4, 1};
-        MaxRealValue.maxRealValue(m,sellPrice, realValue);
+//        int m = 4;
+//        int[]  sellPrice ={6, 6, 1, 3};
+//        int[] realValue = {1, 4, 4, 1};
+//        MaxRealValue.maxRealValue(m,sellPrice, realValue);
 
         // 08-09
-        BufferedReaderTest.bufferedReaderTest1();
+        //BufferedReaderTest.bufferedReaderTest1();
+
+        // 08-15
+        VolatileTest.test1();
     }
 }

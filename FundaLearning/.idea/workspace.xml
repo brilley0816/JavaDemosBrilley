@@ -7,7 +7,6 @@
     <list default="true" id="9ec4c7e1-8b66-4474-a9f8-49ecaf5044cb" name="Default Changelist" comment="Default Changelist">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Brilley/JavaLearn/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Brilley/JavaLearn/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Brilley/Stream/ScannerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Brilley/IOStream/ScannerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +51,7 @@
     <property name="go.format.on.save.advertiser.fired" value="true" />
     <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -153,6 +153,8 @@
       <workItem from="1659507006650" duration="25000" />
       <workItem from="1659953972439" duration="537000" />
       <workItem from="1660059535754" duration="1357000" />
+      <workItem from="1660535306413" duration="960000" />
+      <workItem from="1660702829935" duration="1333000" />
     </task>
     <servers />
   </component>

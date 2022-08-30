@@ -639,6 +639,10 @@ public class Main {
         //BufferedReaderTest.bufferedReaderTest1();
 
         // 08-15
-        VolatileTest.test1();
+        // VolatileTest.test1();
+
+        //08-30
+        PrimeTest.isPrime(173);
+        PrimeTest.allPrimes(173);
     }
 }

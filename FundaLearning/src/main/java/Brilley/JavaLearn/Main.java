@@ -30,6 +30,7 @@ import Brilley.SortAlgorithms.MergeSort;
 import Brilley.SortAlgorithms.QuickSort;
 import Brilley.SortAlgorithms.SortedInPlace;
 //import Brilley.Stream.ScannerTest;
+import Brilley.SortAlgorithms.SwapNums;
 import Brilley.concurrent.ThreadTest;
 import Brilley.jvm.ClassLoaderTest;
 import Brilley.stringRelated.EncodeString;
@@ -642,7 +643,13 @@ public class Main {
         // VolatileTest.test1();
 
         //08-30
-        PrimeTest.isPrime(173);
-        PrimeTest.allPrimes(173);
+//        PrimeTest.isPrime(173);
+//        PrimeTest.allPrimes(173);
+
+        // 08-31
+//        SwapNums.test1();
+        // 09-01
+        //SingleStack.test1();
+        SortList.test();
     }
 }

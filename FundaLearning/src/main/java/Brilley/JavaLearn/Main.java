@@ -38,6 +38,7 @@ import Brilley.util.TimeComplexity;
 import javafx.util.converter.LocalDateTimeStringConverter;
 
 import java.sql.SQLClientInfoException;
+import java.sql.SQLOutput;
 import java.time.LocalDateTime;
 import java.util.*;
 //import java.util.Objects;
@@ -650,6 +651,24 @@ public class Main {
 //        SwapNums.test1();
         // 09-01
         //SingleStack.test1();
-        SortList.test();
+        //SortList.test();
+
+        // 09 - 03
+        //SeqPackage.test1();
+        //NodeTest.test();
+
+        // 09 - 05
+//        BCryptTest.test1();
+//        AesTest.test1();
+//        String content = "21yanyan";
+//        String key = "brilley";
+//        System.out.println(content);
+//        String cipherString = AesUtil.encrypt(content, key);
+//        System.out.println(cipherString);
+//
+//        String plainStr = AesUtil.decrypt(cipherString, key);
+//        System.out.println(plainStr);
+        // 09 - 06
+        SortTest.test1();
     }
 }

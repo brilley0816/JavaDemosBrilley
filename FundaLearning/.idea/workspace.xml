@@ -51,7 +51,6 @@
     <property name="go.format.on.save.advertiser.fired" value="true" />
     <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -157,7 +156,14 @@
       <workItem from="1660702829935" duration="1539000" />
       <workItem from="1661847395302" duration="1869000" />
       <workItem from="1661947605377" duration="4444000" />
-      <workItem from="1662030952531" duration="2805000" />
+      <workItem from="1662030952531" duration="3644000" />
+      <workItem from="1662169251442" duration="5186000" />
+      <workItem from="1662364714170" duration="38000" />
+      <workItem from="1662365156970" duration="3511000" />
+      <workItem from="1662389639565" duration="1728000" />
+      <workItem from="1662391725577" duration="956000" />
+      <workItem from="1662732012932" duration="1635000" />
+      <workItem from="1662737996203" duration="2179000" />
     </task>
     <servers />
   </component>

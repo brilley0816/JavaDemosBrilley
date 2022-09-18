@@ -1,5 +1,6 @@
 package Brilley.ClassicalAlgorithmsProblems;
 
+import java.awt.font.NumericShaper;
 import java.util.Arrays;
 import java.util.Random;
 
@@ -12,34 +13,52 @@ public class SortTest {
     public static void test1() {
         long t1 = System.currentTimeMillis();
         Random rd = new Random();
-        int len = 20000;
+        int len = 100000;
         int[] arr1 = new int[len];
         int[] arr2 = new int[len];
         int[] arr3 = new int[len];
+        int[] arr4 = new int[len];
+        int[] arr5 = new int[len];
         for (int i = 0;i < len; i++) {
             int temp = rd.nextInt(len);
             arr1[i] = temp;
             arr2[i] = temp;
             arr3[i] = temp;
+            arr4[i] = temp;
+            arr5[i] = temp;
         }
         long t2 = System.currentTimeMillis();
         t1 = System.currentTimeMillis();
         bubbleSort(arr1);
         System.out.println(arr1[899]);
         t2 = System.currentTimeMillis();
-        System.out.println("the time of sorting arrays is " + (t2 - t1) + "ms");
+        System.out.println("the time of bubble sorting arrays is " + (t2 - t1) + "ms");
 
         t1 = System.currentTimeMillis();
         selectSort(arr2);
         System.out.println(arr2[899]);
         t2 = System.currentTimeMillis();
-        System.out.println("the time of sorting arrays is " + (t2 - t1) + "ms");
+        System.out.println("the time of select sorting arrays is " + (t2 - t1) + "ms");
 
         t1 = System.currentTimeMillis();
         mergeSort(arr3);
         System.out.println(arr3[899]);
         t2 = System.currentTimeMillis();
-        System.out.println("the time of sorting arrays is " + (t2 - t1) + "ms");
+        System.out.println("the time of merg orting arrays is " + (t2 - t1) + "ms");
+
+        t1 = System.currentTimeMillis();
+        quickSort(arr4, 0, arr4.length - 1);
+        System.out.println(arr4[899]);
+        t2 = System.currentTimeMillis();
+        System.out.println("the time of quick sorting arrays is " + (t2 - t1) + "ms");
+
+        t1 = System.currentTimeMillis();
+        HeapSort.buildHeap(arr5);
+        HeapSort.heapSort(arr5);
+        System.out.println(arr5[899]);
+        t2 = System.currentTimeMillis();
+        System.out.println("the time of heap sorting arrays is " + (t2 - t1) + "ms");
+
     }
     private static void bubbleSort(int[] nums) {
         int len = nums.length;
@@ -167,5 +186,31 @@ public class SortTest {
             }
         }
 
+    }
+
+    public static void quickSort(int[] nums, int low, int high) {
+        if (low >= high) {
+            return;
+        }
+        int pivot = findPivot(nums, low, high);
+        quickSort(nums, low, pivot - 1);
+        quickSort(nums, pivot + 1, high);
+    }
+    private static int findPivot(int[] nums, int low, int high) {
+        int temp = nums[high];
+        int i = low;
+        for (int j = low; j < high; j++) {
+            if (nums[j] < temp) {   // the condition i != j is to optimize the result and that condition can not put in && with nums[j] < temp;
+                if (i != j) {
+                    int value = nums[j];
+                    nums[j] = nums[i];
+                    nums[i] = value;
+                }
+                i++;
+            }
+        }
+        nums[high] = nums[i];
+        nums[i] = temp;
+        return i;
     }
 }

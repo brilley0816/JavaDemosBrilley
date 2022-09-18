@@ -1,5 +1,8 @@
 package Brilley.JavaLearn;
 import Brilley.BinaryResearchRelated.SearchRotationArr;
+import Brilley.ClassicalAlgorithmsProblems.FindKestNum;
+import Brilley.ClassicalAlgorithmsProblems.HeapSort;
+import Brilley.ClassicalAlgorithmsProblems.SortTest;
 //import Brilley.Chapter02.SplitString;
 //import Brilley.Chapter03.ArrayTest;
 //import Brilley.Chapter03.GenericTypeTest;
@@ -637,6 +640,14 @@ public class Main {
 //        SortTest.test1();
 
         // 09 - 16
-        SearchRotationArr.test1();
+//        SearchRotationArr.test1();
+        // 09 - 17
+//        SortTest.test1();
+//        FindKestNum.test1();
+
+        // 09-18
+        HeapSort.test1();
+        SortTest.test1();
+
     }
 }

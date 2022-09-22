@@ -1,8 +1,7 @@
 package Brilley.JavaLearn;
 import Brilley.BinaryResearchRelated.SearchRotationArr;
-import Brilley.ClassicalAlgorithmsProblems.FindKestNum;
-import Brilley.ClassicalAlgorithmsProblems.HeapSort;
-import Brilley.ClassicalAlgorithmsProblems.SortTest;
+import Brilley.ClassicalAlgorithmsProblems.*;
+import Brilley.util.Nde;
 //import Brilley.Chapter02.SplitString;
 //import Brilley.Chapter03.ArrayTest;
 //import Brilley.Chapter03.GenericTypeTest;
@@ -646,8 +645,20 @@ public class Main {
 //        FindKestNum.test1();
 
         // 09-18
-        HeapSort.test1();
-        SortTest.test1();
+//        HeapSort.test1();
+//        SortTest.test1();
+//        GetMedian.test1();
+        // 09-21
+//        Nde.test1();
 
+        // 09-22
+//        GetMaxTreeValue.test1();
+//        TryCatchTest.test1();
+//        ReflectionTest.test1();
+//        ReflectionTest.test2();
+//        ReflectionTest.test3();
+        CompareTest.test1();
+        System.out.println("Comparator: ");
+        CompareTest.test2();
     }
 }

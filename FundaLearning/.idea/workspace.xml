@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9ec4c7e1-8b66-4474-a9f8-49ecaf5044cb" name="Default Changelist" comment="Default Changelist">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Brilley/ClassicalAlgorithmsProblems/SortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Brilley/ClassicalAlgorithmsProblems/SortTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Brilley/JavaLearn/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Brilley/JavaLearn/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,17 +46,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.go.format.on.save.advertiser.fired&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  }
-}</component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.format.on.save.advertiser.fired" value="true" />
+    <property name="go.formatter.settings.were.checked" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
   <component name="RunManager">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
@@ -85,7 +80,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="应用程序.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -175,7 +170,9 @@
       <workItem from="1663342994012" duration="1542000" />
       <workItem from="1663403379071" duration="1898000" />
       <workItem from="1663407128973" duration="430000" />
-      <workItem from="1663411302202" duration="5122000" />
+      <workItem from="1663411302202" duration="6644000" />
+      <workItem from="1663810096693" duration="5539000" />
+      <workItem from="1663820661435" duration="8532000" />
     </task>
     <servers />
   </component>
@@ -192,9 +189,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VgoProject">
-    <integration-enabled>false</integration-enabled>
-    <settings-migrated>true</settings-migrated>
   </component>
 </project>

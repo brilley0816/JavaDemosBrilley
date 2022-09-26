@@ -17,6 +17,13 @@ class CpData implements Comparable<CpData> {
     public void print() {
         System.out.println("data: " + data + "; name: " + name + "; value: " + value);
     }
+    public void test1(Integer a) {
+        System.out.println("this is test1 method");
+    }
+
+    public void test1(int a) {
+        System.out.println("this is test1 method: int");
+    }
 
     @Override
     public int compareTo(CpData o) {
@@ -71,6 +78,8 @@ public class CompareTest {
         for (CpData cd : nums) {
             cd.print();
         }
+        nums[0].test1(1);
+        nums[0].test1(new Integer(1));
 
     }
 }

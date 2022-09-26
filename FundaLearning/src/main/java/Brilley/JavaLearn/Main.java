@@ -657,8 +657,11 @@ public class Main {
 //        ReflectionTest.test1();
 //        ReflectionTest.test2();
 //        ReflectionTest.test3();
-        CompareTest.test1();
-        System.out.println("Comparator: ");
-        CompareTest.test2();
+//        CompareTest.test1();
+//        System.out.println("Comparator: ");
+//        CompareTest.test2();
+
+        // 09-24
+        IntegerReverse.test1();
     }
 }

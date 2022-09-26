@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9ec4c7e1-8b66-4474-a9f8-49ecaf5044cb" name="Default Changelist" comment="Default Changelist">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Brilley/ClassicalAlgorithmsProblems/CompareTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Brilley/ClassicalAlgorithmsProblems/CompareTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Brilley/JavaLearn/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Brilley/JavaLearn/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,11 +79,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="应用程序.Main" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -172,7 +168,10 @@
       <workItem from="1663407128973" duration="430000" />
       <workItem from="1663411302202" duration="6644000" />
       <workItem from="1663810096693" duration="5539000" />
-      <workItem from="1663820661435" duration="8532000" />
+      <workItem from="1663820661435" duration="8847000" />
+      <workItem from="1663836635165" duration="936000" />
+      <workItem from="1664001550645" duration="185000" />
+      <workItem from="1664029587768" duration="1404000" />
     </task>
     <servers />
   </component>
